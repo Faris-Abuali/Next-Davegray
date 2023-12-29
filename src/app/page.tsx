@@ -5,6 +5,8 @@ export default function Home() {
     <main>
       <h1>Home Page!</h1>
       <Link href="/about">To About</Link>
+      <br />
+      <Link href="/users">To Users</Link>
     </main>
   )
 }

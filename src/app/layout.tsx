@@ -16,8 +16,8 @@ const RootLayout = ({
 }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <nav>My Navbar</nav>
+      <body>
+        {/* <nav>My Navbar</nav> */}
         {children}
       </body>
     </html>
