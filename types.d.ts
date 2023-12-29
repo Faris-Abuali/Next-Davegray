@@ -1,3 +1,7 @@
+type Params<T extends string> = {
+    params: Record<T, string>;
+};
+
 type Post = {
     userId: number;
     id: number;
@@ -28,3 +32,26 @@ type User = {
         bs: string;
     };
 };
+
+type Result = {
+    pageid: string;
+    title: string;
+    extract: string;
+    thumbnail?: {
+        source: string;
+        width: number;
+        height: number;
+    };
+}
+
+type SearchResult = {
+    query?: {
+        pages?: Result[];
+    }
+}
+
+type BlogPost = {
+    id: string;
+    title: string;
+    date: string;
+}

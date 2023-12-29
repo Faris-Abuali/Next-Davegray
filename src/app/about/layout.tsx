@@ -18,7 +18,7 @@ const AboutLayout = ({ children }: WithChildren) => {
     return (
         <>
             <nav>About Navbar</nav>
-            <main className={styles.main}>
+            <main className={inter.className}>
                 {children}
             </main>
         </>
