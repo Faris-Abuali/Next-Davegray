@@ -2,6 +2,8 @@ import {Inter} from 'next/font/google'
 const inter = Inter({subsets: ['latin']})
 import Posts from './components/Posts'
 
+export const revalidate = 10 // seconds
+
 export default function Home() {
   return (
     <main className="px-6 mx-auto">
