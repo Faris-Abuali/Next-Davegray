@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import styles from './styles.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ const AboutLayout = ({ children }: WithChildren) => {
     return (
         <>
             <nav>About Navbar</nav>
-            <main className={styles.main}>
+            <main className={inter.className}>
                 {children}
             </main>
         </>
