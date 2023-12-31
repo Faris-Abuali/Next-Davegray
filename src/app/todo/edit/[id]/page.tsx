@@ -2,7 +2,8 @@ import Todo from "@/app/components/Todo"
 import fetchTodo from "@/lib/fetchTodo"
 import { notFound } from "next/navigation"
 
-export const revalidate = 0
+// export const revalidate = 0 // for development only
+export const revalidate = 86400 // seconds
 
 type Props = {
     params: {

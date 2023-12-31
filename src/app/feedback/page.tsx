@@ -15,7 +15,6 @@ export default function Feedback() {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log(JSON.stringify(data))
         const { name, email, message } = data
 
         // Send data to API route 
@@ -30,7 +29,6 @@ export default function Feedback() {
         })
 
         const result = await res.json()
-        console.log(result)
 
         // Navigate to thank you 
         router.push(`/thank-you/`)

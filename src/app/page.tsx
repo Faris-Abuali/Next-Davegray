@@ -2,7 +2,7 @@ import {Inter} from 'next/font/google'
 const inter = Inter({subsets: ['latin']})
 import Posts from './components/Posts'
 
-export const revalidate = 10 // seconds
+export const revalidate = 86400 // seconds
 
 export default function Home() {
   return (
