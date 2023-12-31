@@ -6,10 +6,6 @@ const allowedOrigins = process.env.NODE_ENV === 'production'
 
 export function middleware(request: Request) {
     const origin = request.headers.get("origin")
-    console.log({
-        origin,
-        allowedOrigins
-    })
 
     if (origin && !allowedOrigins.includes(origin)) {
         return new NextResponse(null, {
@@ -31,10 +27,6 @@ export function middleware(request: Request) {
     // }
 
     // The middleware function will be invoked for EVERY ROUTE IN YOUR PROJECT
-    console.log("middleware")
-
-    console.log(request.method)
-    console.log(request.url)
 
     return NextResponse.next()
 }
