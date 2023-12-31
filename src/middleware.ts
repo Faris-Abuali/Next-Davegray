@@ -7,15 +7,15 @@ const allowedOrigins = process.env.NODE_ENV === 'production'
 export function middleware(request: Request) {
     const origin = request.headers.get("origin")
 
-    if (origin && !allowedOrigins.includes(origin)) {
-        return new NextResponse(null, {
-            status: 403,
-            statusText: "Forbidden",
-            headers: {
-                'Content-Type': 'text/plain',
-            },
-        })
-    }
+    // if (origin && !allowedOrigins.includes(origin)) {
+    //     return new NextResponse(null, {
+    //         status: 403,
+    //         statusText: "Forbidden",
+    //         headers: {
+    //             'Content-Type': 'text/plain',
+    //         },
+    //     })
+    // }
 
     // const regex = new RegExp('/api/.*')
     // if (request.url.includes('/api/')) {
